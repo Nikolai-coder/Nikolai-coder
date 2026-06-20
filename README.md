@@ -113,8 +113,6 @@ irm "https://github.com/Nikolai-coder/diavlo-wav-releases/releases/latest/downlo
 
 ---
 
-<a id="nodo-canarias"></a>
-
 ## `05 // NODO CANARIAS` 🌋🌊
 
 <table>
