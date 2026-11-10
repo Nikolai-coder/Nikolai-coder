@@ -18,21 +18,25 @@ NARROW = "(max-width: 600px)"
 
 
 def picture(name: str, alt: str, href: str | None = None) -> str:
-    """Markup for one plate. ``name`` is the file stem shared by its four variants."""
+    """Markup for one plate. ``name`` is the file stem shared by its four variants.
+
+    The block opens with ``<p>`` on a line of its own. That makes the whole
+    thing one raw HTML block for GitHub's Markdown parser; without it, a
+    leading ``<a>`` is read as inline text and the ``<source>`` lines are torn
+    out of their ``<picture>``.
+    """
     stem = f"{ASSETS}/{name}"
-    alt = html.escape(alt, quote=True)
     rows = [
         "<picture>",
         f'<source media="(prefers-color-scheme: dark) and {NARROW}" srcset="{stem}.night.tall.svg">',
         f'<source media="(prefers-color-scheme: light) and {NARROW}" srcset="{stem}.day.tall.svg">',
         f'<source media="(prefers-color-scheme: light)" srcset="{stem}.day.wide.svg">',
-        f'<img src="{stem}.night.wide.svg" width="100%" alt="{alt}">',
+        f'<img src="{stem}.night.wide.svg" width="100%" alt="{html.escape(alt, quote=True)}">',
         "</picture>",
     ]
     if href:
-        rows[0] = f'<a href="{html.escape(href, quote=True)}">' + rows[0]
-        rows[-1] += "</a>"
-    return "\n".join(rows)
+        rows = [f'<a href="{html.escape(href, quote=True)}">', *rows, "</a>"]
+    return "\n".join(["<p>", *rows, "</p>"])
 
 
 def _line(line: dict) -> str:
