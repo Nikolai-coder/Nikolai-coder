@@ -1,0 +1,395 @@
+{
+ "schema": 1,
+ "login": "Nikolai-coder",
+ "repos": [
+  {
+   "name": "czkawka",
+   "description": "Multi functional app to find duplicates, empty folders, similar images etc.",
+   "fork": true,
+   "archived": false,
+   "stars": 0,
+   "forks": 0,
+   "created": "2026-07-05",
+   "pushed": "2026-07-05",
+   "branch": "master",
+   "licence": null,
+   "releases": [],
+   "languages": [],
+   "paths": []
+  },
+  {
+   "name": "diavlo-mind",
+   "description": "Agent Skill and prompt framework for Claude Code, Codex, Gemini CLI and any LLM: planning, verification, multi-agent roles, project memory and a benchmark that measures what it changes.",
+   "fork": false,
+   "archived": false,
+   "stars": 0,
+   "forks": 0,
+   "created": "2026-11-10",
+   "pushed": "2026-11-10",
+   "branch": "main",
+   "licence": "MIT",
+   "releases": [],
+   "languages": [
+    "Python"
+   ],
+   "paths": [
+    "evaluation/results/RESULTS.md"
+   ]
+  },
+  {
+   "name": "diavlo-player",
+   "description": null,
+   "fork": false,
+   "archived": false,
+   "stars": 0,
+   "forks": 0,
+   "created": "2026-06-25",
+   "pushed": "2026-06-25",
+   "branch": "master",
+   "licence": null,
+   "releases": [
+    {
+     "tag": "v0.1.0",
+     "published": "2026-06-25T03:50:15Z",
+     "prerelease": false,
+     "downloads": 2
+    }
+   ],
+   "languages": [],
+   "paths": []
+  },
+  {
+   "name": "diavlo-wav-releases",
+   "description": "DIAVLOWAV — a local audio workstation for Windows: stem separation, mastering, audio-to-MIDI and model management. By Nikolai Coder.",
+   "fork": false,
+   "archived": false,
+   "stars": 8,
+   "forks": 2,
+   "created": "2026-06-19",
+   "pushed": "2026-11-08",
+   "branch": "main",
+   "licence": null,
+   "releases": [
+    {
+     "tag": "v1.4.0",
+     "published": "2026-11-08T04:49:55Z",
+     "prerelease": false,
+     "downloads": 5
+    },
+    {
+     "tag": "v1.3.1",
+     "published": "2026-10-03T22:13:00Z",
+     "prerelease": false,
+     "downloads": 73
+    },
+    {
+     "tag": "v1.3.0",
+     "published": "2026-09-30T19:08:18Z",
+     "prerelease": false,
+     "downloads": 29
+    },
+    {
+     "tag": "v1.2.0",
+     "published": "2026-09-24T18:33:24Z",
+     "prerelease": false,
+     "downloads": 34
+    },
+    {
+     "tag": "v1.1.1",
+     "published": "2026-08-20T14:35:30Z",
+     "prerelease": false,
+     "downloads": 37
+    },
+    {
+     "tag": "v1.0.0",
+     "published": "2026-07-23T20:25:10Z",
+     "prerelease": false,
+     "downloads": 48
+    },
+    {
+     "tag": "v0.5.1",
+     "published": "2026-07-15T19:25:21Z",
+     "prerelease": false,
+     "downloads": 34
+    },
+    {
+     "tag": "v0.5.0",
+     "published": "2026-07-12T22:12:31Z",
+     "prerelease": false,
+     "downloads": 35
+    },
+    {
+     "tag": "v0.4.3",
+     "published": "2026-07-12T20:12:49Z",
+     "prerelease": false,
+     "downloads": 26
+    },
+    {
+     "tag": "v0.4.2",
+     "published": "2026-07-12T07:41:11Z",
+     "prerelease": false,
+     "downloads": 24
+    },
+    {
+     "tag": "v0.4.1",
+     "published": "2026-07-11T19:54:43Z",
+     "prerelease": false,
+     "downloads": 24
+    },
+    {
+     "tag": "v0.4.0",
+     "published": "2026-07-10T20:02:31Z",
+     "prerelease": false,
+     "downloads": 31
+    },
+    {
+     "tag": "sidecars-demucs-v1",
+     "published": "2026-07-10T18:37:43Z",
+     "prerelease": false,
+     "downloads": 60
+    },
+    {
+     "tag": "v0.3.6",
+     "published": "2026-07-05T15:33:57Z",
+     "prerelease": false,
+     "downloads": 28
+    },
+    {
+     "tag": "v0.3.5",
+     "published": "2026-07-05T05:38:23Z",
+     "prerelease": false,
+     "downloads": 27
+    },
+    {
+     "tag": "v0.3.4",
+     "published": "2026-07-04T01:42:40Z",
+     "prerelease": false,
+     "downloads": 30
+    },
+    {
+     "tag": "v0.3.3",
+     "published": "2026-06-21T16:13:17Z",
+     "prerelease": false,
+     "downloads": 32
+    },
+    {
+     "tag": "v0.3.1",
+     "published": "2026-06-21T04:17:09Z",
+     "prerelease": false,
+     "downloads": 26
+    },
+    {
+     "tag": "v0.3.0",
+     "published": "2026-06-20T19:49:23Z",
+     "prerelease": false,
+     "downloads": 25
+    },
+    {
+     "tag": "v0.2.3",
+     "published": "2026-06-20T15:41:39Z",
+     "prerelease": false,
+     "downloads": 24
+    },
+    {
+     "tag": "v0.2.1",
+     "published": "2026-06-20T05:14:07Z",
+     "prerelease": false,
+     "downloads": null
+    },
+    {
+     "tag": "v0.2.0",
+     "published": "2026-06-20T00:58:20Z",
+     "prerelease": false,
+     "downloads": 25
+    },
+    {
+     "tag": "v0.1.1",
+     "published": "2026-06-19T16:28:38Z",
+     "prerelease": false,
+     "downloads": 26
+    },
+    {
+     "tag": "v0.1.0",
+     "published": "2026-06-19T14:40:39Z",
+     "prerelease": false,
+     "downloads": 26
+    }
+   ],
+   "languages": [],
+   "paths": [
+    "media/diavlowav-hero.mp4"
+   ]
+  },
+  {
+   "name": "diavlodrop",
+   "description": null,
+   "fork": false,
+   "archived": false,
+   "stars": 0,
+   "forks": 0,
+   "created": "2026-06-22",
+   "pushed": "2026-06-22",
+   "branch": "master",
+   "licence": null,
+   "releases": [],
+   "languages": [],
+   "paths": []
+  },
+  {
+   "name": "Instagram-its-an-app",
+   "description": "Yea",
+   "fork": false,
+   "archived": false,
+   "stars": 0,
+   "forks": 0,
+   "created": "2022-07-15",
+   "pushed": "2022-07-15",
+   "branch": "main",
+   "licence": null,
+   "releases": [],
+   "languages": [],
+   "paths": []
+  },
+  {
+   "name": "Nikolai",
+   "description": null,
+   "fork": false,
+   "archived": false,
+   "stars": 0,
+   "forks": 0,
+   "created": "2020-02-17",
+   "pushed": "2020-02-17",
+   "branch": "master",
+   "licence": null,
+   "releases": [],
+   "languages": [],
+   "paths": []
+  },
+  {
+   "name": "Nikolai-coder",
+   "description": "Nikolai Coder — Creator of DIAVLOWAV",
+   "fork": false,
+   "archived": false,
+   "stars": 0,
+   "forks": 0,
+   "created": "2026-06-20",
+   "pushed": "2026-09-30",
+   "branch": "main",
+   "licence": null,
+   "releases": [],
+   "languages": [],
+   "paths": []
+  }
+ ],
+ "activity": {
+  "source": "commits",
+  "weeks": [
+   [
+    "2026-05-18",
+    0
+   ],
+   [
+    "2026-05-25",
+    0
+   ],
+   [
+    "2026-06-01",
+    0
+   ],
+   [
+    "2026-06-08",
+    0
+   ],
+   [
+    "2026-06-15",
+    10
+   ],
+   [
+    "2026-06-22",
+    8
+   ],
+   [
+    "2026-06-29",
+    0
+   ],
+   [
+    "2026-07-06",
+    0
+   ],
+   [
+    "2026-07-13",
+    0
+   ],
+   [
+    "2026-07-20",
+    2
+   ],
+   [
+    "2026-07-27",
+    0
+   ],
+   [
+    "2026-08-03",
+    0
+   ],
+   [
+    "2026-08-10",
+    0
+   ],
+   [
+    "2026-08-17",
+    1
+   ],
+   [
+    "2026-08-24",
+    0
+   ],
+   [
+    "2026-08-31",
+    0
+   ],
+   [
+    "2026-09-07",
+    0
+   ],
+   [
+    "2026-09-14",
+    0
+   ],
+   [
+    "2026-09-21",
+    0
+   ],
+   [
+    "2026-09-28",
+    5
+   ],
+   [
+    "2026-10-05",
+    0
+   ],
+   [
+    "2026-10-12",
+    0
+   ],
+   [
+    "2026-10-19",
+    0
+   ],
+   [
+    "2026-10-26",
+    0
+   ],
+   [
+    "2026-11-02",
+    1
+   ],
+   [
+    "2026-11-09",
+    0
+   ]
+  ]
+ },
+ "captured": "2026-11-10",
+ "seed": "a2f96f"
+}

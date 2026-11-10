@@ -1,0 +1,109 @@
+name: Factory
+
+# Rebuilds the profile plates from the public GitHub record.
+#
+# There is no `uses:` in this file on purpose. The jobs run plain git and the
+# Python that ships with the runner, so there is nothing to pin, nothing to
+# update and nothing from the marketplace that can change under the profile.
+# How the build works: factory/README.md
+
+on:
+  schedule:
+    - cron: "23 5 * * *" # every day at 05:23 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "factory/**"
+      - "README.md"
+      - ".github/workflows/factory.yml"
+  pull_request:
+    paths:
+      - "factory/**"
+      - "assets/**"
+      - "README.md"
+      - ".github/workflows/factory.yml"
+
+# Read-only by default. Only the build job is allowed to write, and only to
+# this repository. No secret is used anywhere: the token is the one GitHub
+# issues to every run.
+permissions:
+  contents: read
+
+concurrency:
+  group: factory-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  check:
+    name: Check the pull request
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out
+        run: |
+          git init -q .
+          git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
+          git fetch -q --depth 1 origin "$GITHUB_REF"
+          git checkout -q FETCH_HEAD
+
+      - name: Committed plates match the generator
+        run: python3 -m factory --check
+
+      - name: Read the public record without writing
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 -m factory --dry-run
+
+  build:
+    name: Rebuild from the public record
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Rebuild, and commit only what changed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          basic=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
+          echo "::add-mask::$basic"
+          auth="http.extraheader=AUTHORIZATION: basic $basic"
+
+          git init -q .
+          git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
+
+          # Two attempts: if the branch moves while the build runs, read it again.
+          for attempt in 1 2; do
+            git -c "$auth" fetch -q --depth 1 origin "$GITHUB_REF"
+            git checkout -q -f --detach FETCH_HEAD
+
+            python3 -m factory
+
+            git add -A README.md assets factory/data
+            if git diff --cached --quiet; then
+              echo "The record has not changed. Nothing to commit."
+              exit 0
+            fi
+
+            # Committed as the Actions bot, so rebuilds never count as the
+            # owner's contributions.
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -q -m "factory: rebuild from the public record"
+
+            if git -c "$auth" push -q origin "HEAD:$GITHUB_REF"; then
+              echo "Published."
+              exit 0
+            fi
+            echo "::notice::The branch moved during the build. Reading it again."
+          done
+
+          echo "::error::The rebuild could not be published."
+          exit 1
