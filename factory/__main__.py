@@ -22,7 +22,7 @@ import xml.etree.ElementTree as ET
 
 from . import collect, readme
 from .model import view
-from .modules import control, exit as exit_plate, gate, line, routing, vault
+from .modules import control, exit as exit_plate, gate, line, rail, routing, vault
 from .theme import THEMES
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -36,9 +36,10 @@ FORBIDDEN = {"script", "foreignObject", "image", "iframe", "a", "audio", "video"
 
 
 def render(model: dict) -> dict[str, str]:
-    """Every plate in every variant, keyed by file name."""
+    """Every plate in every variant, plus one conveyor rail per shift, keyed by file name."""
     plates: dict[str, str] = {}
     for theme in THEMES:
+        plates[f"rail.{theme.name}.svg"] = rail.render(theme)
         for layout in ("wide", "tall"):
             suffix = f"{theme.name}.{layout}.svg"
             plates[f"gate.{suffix}"] = gate.render(model, theme, layout)
@@ -75,6 +76,7 @@ def inspect(plates: dict[str, str], page: str) -> list[str]:
                     problems.append(f"{name}: attribute {key}={value!r} reaches outside the file")
         if re.search(r"url\((?!#)|@import|https?://(?!www\.w3\.org/)", markup):
             problems.append(f"{name}: refers to an external resource")
+    problems += readme.audit(page)
     for reference in readme.references(page):
         local = reference.split("#")[0]
         if local.startswith(f"{readme.ASSETS}/"):

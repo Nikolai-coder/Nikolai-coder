@@ -40,10 +40,20 @@ dash. Names without a public repository are shown as sealed bays, with no descri
 | No CSS, no JavaScript, no inline SVG in Markdown | All graphics are separate `.svg` files shown through `<img>` |
 | SVG inside `<img>` cannot run scripts or load fonts, images or stylesheets | Plates are self-contained: paths, system fonts, one `<style>` block |
 | CSS animation inside such an SVG does run | Motion is CSS only, on `transform`, `opacity` and `stroke-dashoffset` |
-| `<picture>` with `media` on `<source>` is kept by the sanitizer | Each plate has four files: night or day by `prefers-color-scheme`, wide or tall by `max-width: 600px` |
+| The sanitizer keeps `<picture>`, and on `<source>` only `media` and the first URL of `srcset`; `sizes` and width descriptors are removed | Every plate has four files (night or day, wide or tall) and the choice is made with media queries alone |
+| On profile pages, a fixed GitHub theme makes GitHub force every source whose query names a colour scheme fully on or off | A colour scheme and a width are never combined in one query; see below |
 | A colour scheme query inside the SVG is unreliable in Safari | Theme is chosen by `<picture>`, never inside the file |
-| The visitor's GitHub theme can differ from their system scheme | Every plate is opaque, so it stays legible on either page background |
+| The newer repository view follows the system scheme even when the GitHub theme differs | Every plate is opaque, so it stays legible on either page background |
 | Some visitors ask for reduced motion | Every file carries `@media (prefers-reduced-motion: reduce)` and stops all animation |
+
+**Why every plate is two pictures.** A query like `(prefers-color-scheme: dark) and (max-width: 600px)` works
+until a visitor with a fixed GitHub theme opens the profile: GitHub then turns that source permanently on and
+desktops receive the phone layout. So each plate is two pictures, one per shift. The first source of a picture
+names the *other* colour scheme and shows the conveyor rail; otherwise a plain width query picks the tall or
+wide plate. In every state one picture shows the plate and the other a rail, which is why the rail sits above
+the plates on one shift and below them on the other. [`readme.py`](readme.py) holds the markup and `audit`,
+a model of GitHub's behaviour that checks all 24 combinations of theme setting, page type, system scheme and
+width on every build.
 
 `python3 -m factory --check` enforces the rest: well-formed XML, no element or attribute that reaches outside
 the file, at most 16 KB per plate, and no README reference to a file that does not exist.
@@ -60,7 +70,7 @@ factory/
   readme.py                <picture> markup and the README weave
   typeface.py              FACTORY CUT
   theme.py  parts.py  svg.py   tokens, shared parts, SVG helpers
-  modules/                 one file per plate: gate, line, control, routing, vault, exit
+  modules/                 one file per plate: gate, line, control, routing, vault, exit, and the rail
   registry.json            what you declare
   data/snapshot.json       last good read of the public record
 .github/workflows/factory.yml
