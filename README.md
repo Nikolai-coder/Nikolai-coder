@@ -1,92 +1,109 @@
-<div align="center">
+<!--
+  DIAVLO FACTORY · github.com/Nikolai-coder
 
-<img src="assets/banner.webp" alt="Nikolai Coder — Creator of DIAVLOWAV. Software, audio, AI and creative technology." width="100%" />
+  The blocks between "factory:" markers are written by `python3 -m factory`.
+  To change the page, edit factory/registry.json or the text outside the
+  markers. How it all works: factory/README.md
+-->
 
-<br />
+<!-- factory:gate -->
+<picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/gate.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/gate.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/gate.day.wide.svg">
+<img src="assets/gate.night.wide.svg" width="100%" alt="DIAVLO Factory. The wordmark read as a signal chain: DI, direct in. AV, audio and visual. LO, line out.">
+</picture>
+<!-- /factory:gate -->
 
-**Software · Audio · AI · Creative Technology**
+<p align="center">
+<b>DIAVLO builds software, sound and worlds.</b><br>
+Audio tools that measure instead of guessing, a working method for AI agents, and games and visuals still behind sealed doors.
+</p>
 
-I build software that listens.
+<p align="center">
+<sub>The Factory is a fiction. Everything it ships is real, and every number on this page is read from the public record.</sub>
+</p>
 
-<br />
+<!-- factory:lines -->
+<a href="https://github.com/Nikolai-coder/diavlo-wav-releases"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/line.diavlo-wav-releases.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/line.diavlo-wav-releases.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/line.diavlo-wav-releases.day.wide.svg">
+<img src="assets/line.diavlo-wav-releases.night.wide.svg" width="100%" alt="Line 01: DIAVLOWAV. A local audio workstation for Windows. Status: shipping; latest release v1.4.0 on 2026-11-08; 729 installer downloads; 8 stars.">
+</picture></a>
 
-[**DIAVLOWAV**](https://github.com/Nikolai-coder/diavlo-wav-releases)　·　[**Download**](https://github.com/Nikolai-coder/diavlo-wav-releases/releases/latest)　·　[**Watch the film**](https://github.com/Nikolai-coder/diavlo-wav-releases/blob/main/media/diavlowav-hero.mp4)
+**DIAVLOWAV** · A local audio workstation for Windows: stem separation, mastering, audio-to-MIDI and a model browser that rates every model against your hardware. Processing is local by default, and every figure in the interface is measured, never estimated. Releases are built in CI, checksummed and signed; the app refuses an update whose signature does not match.<br>
+<sub>`Rust` `Tauri 2` `React 19` `TypeScript` `FFmpeg` `Demucs` `Basic Pitch` &nbsp;·&nbsp; [Repository](https://github.com/Nikolai-coder/diavlo-wav-releases) · [Latest release](https://github.com/Nikolai-coder/diavlo-wav-releases/releases/latest) · [26-second film](https://github.com/Nikolai-coder/diavlo-wav-releases/blob/main/media/diavlowav-hero.mp4)</sub>
 
-</div>
+<a href="https://github.com/Nikolai-coder/diavlo-mind"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/line.diavlo-mind.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/line.diavlo-mind.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/line.diavlo-mind.day.wide.svg">
+<img src="assets/line.diavlo-mind.night.wide.svg" width="100%" alt="Line 02: DIAVLO MIND. A working method for AI agents, with a benchmark. Status: source open; no public release; last updated 2026-11-10; 0 stars.">
+</picture></a>
 
-<br />
+**DIAVLO MIND** · A working method for AI agents, packaged as an Agent Skill, a Claude Code plugin with eight subagents and four portable system prompts. It makes a model write down the requirements, pick an effort level, test what it built and report with evidence. It ships with the benchmark that measures what it changes, including the runs where it changed nothing.<br>
+<sub>`Python` `Agent Skills` `Claude Code plugin` &nbsp;·&nbsp; [Repository](https://github.com/Nikolai-coder/diavlo-mind) · [Benchmark results](https://github.com/Nikolai-coder/diavlo-mind/blob/main/evaluation/results/RESULTS.md)</sub>
 
-<div align="center">
+<a href="https://github.com/Nikolai-coder/diavlo-player"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/line.diavlo-player.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/line.diavlo-player.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/line.diavlo-player.day.wide.svg">
+<img src="assets/line.diavlo-player.night.wide.svg" width="100%" alt="Line 03: DIAVLO PLAYER. A native audio player for Windows. Status: shipping; latest release v0.1.0 on 2026-06-25; 2 installer downloads; 0 stars.">
+</picture></a>
 
-## DIAVLOWAV
+**DIAVLO PLAYER** · A native audio player for Windows with a frameless glass window. Open it, drop a file on it, listen: WAV, FLAC, MP3, AAC, OGG, Opus, AIFF and M4A, from the desktop or the command line. One portable executable, no installer.<br>
+<sub>`Rust` `Slint` `Symphonia` `CPAL` `Windows DWM` &nbsp;·&nbsp; [Repository](https://github.com/Nikolai-coder/diavlo-player) · [Latest release](https://github.com/Nikolai-coder/diavlo-player/releases/latest)</sub>
 
-*A local audio workstation for Windows.*<br />
-*Measure it. Separate it. Master it. Nothing leaves your machine unless you say so.*
+<a href="https://github.com/Nikolai-coder/diavlodrop"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/line.diavlodrop.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/line.diavlodrop.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/line.diavlodrop.day.wide.svg">
+<img src="assets/line.diavlodrop.night.wide.svg" width="100%" alt="Line 04: DIAVLO DROP. One beat in, a full release package out. Status: in assembly; no public release; last updated 2026-06-22; 0 stars.">
+</picture></a>
 
-<br />
+**DIAVLO DROP** · One finished beat in, a complete release package out: masters and tagged previews, cover art, visualizer videos for every aspect ratio and ready-to-paste metadata. Described in its README; no public build has been released yet.<br>
+<sub>`Tauri` `Rust` `React` `TypeScript` `FFmpeg` &nbsp;·&nbsp; [Repository](https://github.com/Nikolai-coder/diavlodrop)</sub>
+<!-- /factory:lines -->
 
-<a href="https://github.com/Nikolai-coder/diavlo-wav-releases/blob/main/media/diavlowav-hero.mp4">
-  <img src="assets/diavlowav-loop.webp" alt="DIAVLOWAV — stem separation, mastering and model browser, recorded from the real application" width="86%" />
-</a>
+<!-- factory:control -->
+<picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/control.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/control.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/control.day.wide.svg">
+<img src="assets/control.night.wide.svg" width="100%" alt="Telemetry, read on 2026-11-10: 25 releases shipped, 731 installer downloads, 8 stars, 4 public lines, 27 public commits in 26 weeks.">
+</picture>
 
-<sub>Recorded from the real application on a synthetic test track. Click for the 26-second film.</sub>
+<p align="center"><sub>Read from the GitHub API on 2026-11-10. A release's download figure is the counter of its largest file, the installer. The signal counts commits by @Nikolai-coder in public repositories, per week.</sub></p>
+<!-- /factory:control -->
 
-</div>
+<!-- factory:routing -->
+<picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/routing.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/routing.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/routing.day.wide.svg">
+<img src="assets/routing.night.wide.svg" width="100%" alt="Routing matrix, as stated by each repository. RUST: DIAVLOWAV, DIAVLO PLAYER, DIAVLO DROP. TAURI: DIAVLOWAV, DIAVLO DROP. REACT + TYPESCRIPT: DIAVLOWAV, DIAVLO DROP. SLINT: DIAVLO PLAYER. FFMPEG: DIAVLOWAV, DIAVLO DROP. SYMPHONIA: DIAVLOWAV, DIAVLO PLAYER. CPAL: DIAVLO PLAYER. DEMUCS: DIAVLOWAV. BASIC PITCH: DIAVLOWAV. PYTHON: DIAVLO MIND. GITHUB ACTIONS: DIAVLOWAV, DIAVLO MIND.">
+</picture>
+<!-- /factory:routing -->
 
-<br />
+<!-- factory:vault -->
+<picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/vault.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/vault.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/vault.day.wide.svg">
+<img src="assets/vault.night.wide.svg" width="100%" alt="Sealed bays, declared but not public: DIAVLO VISUALS, DIAVLO STUDIO, DVLBO, EGG RAIDERS!, SMASH A PLANET!.">
+</picture>
+<!-- /factory:vault -->
 
-<div align="center">
+<p align="center">
+<sub>Also on the bench, by the operator's own account: games in Roblox Studio and Unreal Engine, visuals and motion graphics in Blender, and music production. Each gets a line here the day it ships.</sub>
+</p>
 
-<a href="https://github.com/Nikolai-coder/diavlo-wav-releases/blob/main/media/diavlowav-stems.mp4"><img src="assets/stems.webp" alt="Stem separation with a multitrack player" width="80%" /></a>
-
-**Stem separation**<br />
-Hybrid Transformer Demucs running locally. Vocals, drums, bass and other, plus a derived instrumental. A six-source mode with guitar and piano arrives in v1.3.1.
-<br />
-
-<a href="https://github.com/Nikolai-coder/diavlo-wav-releases/blob/main/media/diavlowav-mastering.mp4"><img src="assets/master.webp" alt="Mastering with measured before and after loudness" width="80%" /></a>
-
-**Mastering**<br />
-EBU R128 measurement before and after, an adaptive plan, and a true-peak check on the file that was actually written.
-<br />
-
-<a href="https://github.com/Nikolai-coder/diavlo-wav-releases/blob/main/media/diavlowav-models.mp4"><img src="assets/models.webp" alt="Model browser rating every model against the machine" width="80%" /></a>
-
-**Model browser**<br />
-Every model is rated against your CPU, memory and disk with a green, amber or red crystal badge, so you know before you download.
-<br />
-
-<img src="assets/midi.webp" alt="Basic Pitch audio-to-MIDI note roll" width="80%" />
-
-**Audio to MIDI**<br />
-Polyphonic transcription with Basic Pitch, previewed as a note roll before you export.
-<br />
-
-</div>
-
-<br />
-
-## Currently building
-
-| Area | Where it stands |
-| :-- | :-- |
-| **Desktop app** | Shipping. Windows 10 and 11, x64, signed in-app updates. |
-| **Stem separation** | Four stems shipping. Six stems (guitar and piano) are in final testing for v1.3.1. |
-| **Mastering** | Shipping. Loudness is measured, not estimated. |
-| **Model management** | Shipping. Verified downloads, hardware ratings, real status. |
-| **AI audio** | Audio to MIDI ships. Optional cloud providers stay off unless you turn them on. |
-| **Android** | In development. A debug build exists; it is not released. |
-| **iOS** | Planned. |
-
-<br />
-
-## Stack
-
-`Rust` · `Tauri 2` · `React 19` · `TypeScript` · `FFmpeg` · `Demucs` · `Basic Pitch` · `GitHub Actions`
-
-<br />
-
-<div align="center">
-
-<sub>Nikolai Coder · Creator of DIAVLOWAV</sub>
-
-</div>
+<!-- factory:exit -->
+<a href="factory/README.md"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/exit.night.tall.svg">
+<source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/exit.day.tall.svg">
+<source media="(prefers-color-scheme: light)" srcset="assets/exit.day.wide.svg">
+<img src="assets/exit.night.wide.svg" width="100%" alt="Manufactured, not templated. Every plate on this page is drawn by code in this repository. Build 2026-11-10, seed a2f96f.">
+</picture></a>
+<!-- /factory:exit -->

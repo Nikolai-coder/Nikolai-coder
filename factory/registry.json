@@ -1,0 +1,187 @@
+{
+  "login": "Nikolai-coder",
+  "site": "CANARY ISLANDS",
+  "output": [
+    "SOFTWARE",
+    "AI",
+    "GAMES",
+    "AUDIOVISUAL"
+  ],
+  "lines": [
+    {
+      "repo": "diavlo-wav-releases",
+      "name": "DIAVLOWAV",
+      "field": "AUDIO",
+      "art": "stems",
+      "claim": "A local audio workstation for Windows",
+      "summary": "A local audio workstation for Windows: stem separation, mastering, audio-to-MIDI and a model browser that rates every model against your hardware. Processing is local by default, and every figure in the interface is measured, never estimated.",
+      "edge": "Releases are built in CI, checksummed and signed; the app refuses an update whose signature does not match.",
+      "stack": [
+        "Rust",
+        "Tauri 2",
+        "React 19",
+        "TypeScript",
+        "FFmpeg",
+        "Demucs",
+        "Basic Pitch"
+      ],
+      "links": [
+        {
+          "label": "26-second film",
+          "path": "media/diavlowav-hero.mp4"
+        }
+      ]
+    },
+    {
+      "repo": "diavlo-mind",
+      "name": "DIAVLO MIND",
+      "field": "AI AGENTS",
+      "art": "loop",
+      "claim": "A working method for AI agents, with a benchmark",
+      "summary": "A working method for AI agents, packaged as an Agent Skill, a Claude Code plugin with eight subagents and four portable system prompts. It makes a model write down the requirements, pick an effort level, test what it built and report with evidence.",
+      "edge": "It ships with the benchmark that measures what it changes, including the runs where it changed nothing.",
+      "stack": [
+        "Python",
+        "Agent Skills",
+        "Claude Code plugin"
+      ],
+      "links": [
+        {
+          "label": "Benchmark results",
+          "path": "evaluation/results/RESULTS.md"
+        }
+      ]
+    },
+    {
+      "repo": "diavlo-player",
+      "name": "DIAVLO PLAYER",
+      "field": "AUDIO",
+      "art": "transport",
+      "claim": "A native audio player for Windows",
+      "summary": "A native audio player for Windows with a frameless glass window. Open it, drop a file on it, listen: WAV, FLAC, MP3, AAC, OGG, Opus, AIFF and M4A, from the desktop or the command line.",
+      "edge": "One portable executable, no installer.",
+      "stack": [
+        "Rust",
+        "Slint",
+        "Symphonia",
+        "CPAL",
+        "Windows DWM"
+      ],
+      "links": []
+    },
+    {
+      "repo": "diavlodrop",
+      "name": "DIAVLO DROP",
+      "field": "AUDIO + VIDEO",
+      "art": "fanout",
+      "claim": "One beat in, a full release package out",
+      "summary": "One finished beat in, a complete release package out: masters and tagged previews, cover art, visualizer videos for every aspect ratio and ready-to-paste metadata.",
+      "edge": "Described in its README; no public build has been released yet.",
+      "stack": [
+        "Tauri",
+        "Rust",
+        "React",
+        "TypeScript",
+        "FFmpeg"
+      ],
+      "links": []
+    }
+  ],
+  "components": [
+    {
+      "name": "RUST",
+      "role": "APPLICATION CORE",
+      "lines": [
+        "diavlo-wav-releases",
+        "diavlo-player",
+        "diavlodrop"
+      ]
+    },
+    {
+      "name": "TAURI",
+      "role": "DESKTOP SHELL",
+      "lines": [
+        "diavlo-wav-releases",
+        "diavlodrop"
+      ]
+    },
+    {
+      "name": "REACT + TYPESCRIPT",
+      "role": "INTERFACE",
+      "lines": [
+        "diavlo-wav-releases",
+        "diavlodrop"
+      ]
+    },
+    {
+      "name": "SLINT",
+      "role": "NATIVE INTERFACE",
+      "lines": [
+        "diavlo-player"
+      ]
+    },
+    {
+      "name": "FFMPEG",
+      "role": "ANALYSIS AND RENDERING",
+      "lines": [
+        "diavlo-wav-releases",
+        "diavlodrop"
+      ]
+    },
+    {
+      "name": "SYMPHONIA",
+      "role": "AUDIO DECODING",
+      "lines": [
+        "diavlo-wav-releases",
+        "diavlo-player"
+      ]
+    },
+    {
+      "name": "CPAL",
+      "role": "AUDIO OUTPUT",
+      "lines": [
+        "diavlo-player"
+      ]
+    },
+    {
+      "name": "DEMUCS",
+      "role": "STEM SEPARATION",
+      "lines": [
+        "diavlo-wav-releases"
+      ]
+    },
+    {
+      "name": "BASIC PITCH",
+      "role": "AUDIO TO MIDI",
+      "lines": [
+        "diavlo-wav-releases"
+      ]
+    },
+    {
+      "name": "PYTHON",
+      "role": "TOOLS AND BENCHMARK",
+      "lines": [
+        "diavlo-mind"
+      ]
+    },
+    {
+      "name": "GITHUB ACTIONS",
+      "role": "BUILDS AND CHECKS",
+      "lines": [
+        "diavlo-wav-releases",
+        "diavlo-mind"
+      ]
+    }
+  ],
+  "sealed": [
+    "DIAVLO VISUALS",
+    "DIAVLO STUDIO",
+    "DVLBO",
+    "EGG RAIDERS!",
+    "SMASH A PLANET!"
+  ],
+  "ignore": [
+    "Nikolai",
+    "Instagram-its-an-app"
+  ]
+}
