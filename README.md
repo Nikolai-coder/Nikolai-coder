@@ -41,7 +41,7 @@ Audio tools that measure instead of guessing, a working method for AI agents, an
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="assets/rail.day.svg">
 <source media="(max-width: 600px)" srcset="assets/line.diavlo-wav-releases.night.tall.svg">
-<img src="assets/line.diavlo-wav-releases.night.wide.svg" width="100%" alt="Line 01: DIAVLOWAV. A local audio workstation for Windows. Status: shipping; latest release v1.4.0 on 2026-11-08; 730 installer downloads; 8 stars.">
+<img src="assets/line.diavlo-wav-releases.night.wide.svg" width="100%" alt="Line 01: DIAVLOWAV. A local audio workstation for Windows. Status: shipping; latest release v1.4.0 on 2026-11-08; 731 installer downloads; 8 stars.">
 </picture>
 </a>
 </p>
@@ -59,13 +59,13 @@ Audio tools that measure instead of guessing, a working method for AI agents, an
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="assets/rail.day.svg">
 <source media="(max-width: 600px)" srcset="assets/line.diavlo-mind.night.tall.svg">
-<img src="assets/line.diavlo-mind.night.wide.svg" width="100%" alt="Line 02: DIAVLO MIND. A working method for AI agents, with a benchmark. Status: source open; no public release; last updated 2026-11-10; 0 stars.">
+<img src="assets/line.diavlo-mind.night.wide.svg" width="100%" alt="Line 02: DIAVLO MIND. A working method for AI agents, with a benchmark. Status: shipping; latest release 1.1.0 on 2026-11-11; 3 installer downloads; 0 stars.">
 </picture>
 </a>
 </p>
 
 **DIAVLO MIND** · A working method for AI agents, packaged as an Agent Skill, a Claude Code plugin with eight subagents and four portable system prompts. It makes a model write down the requirements, pick an effort level, test what it built and report with evidence. It ships with the benchmark that measures what it changes, including the runs where it changed nothing.<br>
-<sub>`Python` `Agent Skills` `Claude Code plugin` &nbsp;·&nbsp; [Repository](https://github.com/Nikolai-coder/diavlo-mind) · [Benchmark results](https://github.com/Nikolai-coder/diavlo-mind/blob/main/evaluation/results/RESULTS.md)</sub>
+<sub>`Python` `Agent Skills` `Claude Code plugin` &nbsp;·&nbsp; [Repository](https://github.com/Nikolai-coder/diavlo-mind) · [Latest release](https://github.com/Nikolai-coder/diavlo-mind/releases/latest) · [Benchmark results](https://github.com/Nikolai-coder/diavlo-mind/blob/main/evaluation/results/RESULTS.md)</sub>
 
 <p>
 <a href="https://github.com/Nikolai-coder/diavlo-player">
@@ -114,11 +114,11 @@ Audio tools that measure instead of guessing, a working method for AI agents, an
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="assets/rail.day.svg">
 <source media="(max-width: 600px)" srcset="assets/control.night.tall.svg">
-<img src="assets/control.night.wide.svg" width="100%" alt="Telemetry, read on 2026-11-10: 25 releases shipped, 732 installer downloads, 8 stars, 4 public lines, 40 contributions in 26 weeks.">
+<img src="assets/control.night.wide.svg" width="100%" alt="Telemetry, read on 2026-11-11: 26 releases shipped, 736 installer downloads, 8 stars, 4 public lines, 41 contributions in 26 weeks.">
 </picture>
 </p>
 
-<p align="center"><sub>Read from the GitHub API on 2026-11-10. A release's download figure is the counter of its largest file, the installer. The signal is GitHub's contribution calendar, summed per week.</sub></p>
+<p align="center"><sub>Read from the GitHub API on 2026-11-11. A release's download figure is the counter of its largest file, the installer. The signal is GitHub's contribution calendar, summed per week.</sub></p>
 <!-- /factory:control -->
 
 <!-- factory:routing -->
@@ -166,7 +166,7 @@ Audio tools that measure instead of guessing, a working method for AI agents, an
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="assets/rail.day.svg">
 <source media="(max-width: 600px)" srcset="assets/exit.night.tall.svg">
-<img src="assets/exit.night.wide.svg" width="100%" alt="Manufactured, not templated. Every plate on this page is drawn by code in this repository. Build 2026-11-10, seed 2be355.">
+<img src="assets/exit.night.wide.svg" width="100%" alt="Manufactured, not templated. Every plate on this page is drawn by code in this repository. Build 2026-11-11, seed 08efca.">
 </picture>
 </a>
 </p>

@@ -25,12 +25,20 @@
    "stars": 0,
    "forks": 0,
    "created": "2026-11-10",
-   "pushed": "2026-11-10",
+   "pushed": "2026-11-11",
    "branch": "main",
    "licence": "MIT",
-   "releases": [],
+   "releases": [
+    {
+     "tag": "1.1.0",
+     "published": "2026-11-11T05:44:44Z",
+     "prerelease": false,
+     "downloads": 3
+    }
+   ],
    "languages": [
-    "Python"
+    "Python",
+    "Batchfile"
    ],
    "paths": [
     "evaluation/results/RESULTS.md"
@@ -74,7 +82,7 @@
      "tag": "v1.4.0",
      "published": "2026-11-08T04:49:55Z",
      "prerelease": false,
-     "downloads": 6
+     "downloads": 7
     },
     {
      "tag": "v1.3.1",
@@ -388,10 +396,10 @@
    ],
    [
     "2026-11-09",
-    2
+    3
    ]
   ]
  },
- "captured": "2026-11-10",
- "seed": "2be355"
+ "captured": "2026-11-11",
+ "seed": "08efca"
 }
