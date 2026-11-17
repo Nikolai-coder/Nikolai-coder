@@ -22,18 +22,24 @@
    "description": "Agent Skill and prompt framework for Claude Code, Codex, Gemini CLI and any LLM: planning, verification, multi-agent roles, project memory and a benchmark that measures what it changes.",
    "fork": false,
    "archived": false,
-   "stars": 0,
+   "stars": 1,
    "forks": 0,
    "created": "2026-11-10",
-   "pushed": "2026-11-11",
+   "pushed": "2026-11-16",
    "branch": "main",
    "licence": "MIT",
    "releases": [
     {
+     "tag": "v1.2.0",
+     "published": "2026-11-16T19:01:56Z",
+     "prerelease": false,
+     "downloads": 7
+    },
+    {
      "tag": "1.1.0",
      "published": "2026-11-11T05:44:44Z",
      "prerelease": false,
-     "downloads": 6
+     "downloads": 8
     }
    ],
    "languages": [
@@ -281,7 +287,7 @@
    "stars": 0,
    "forks": 0,
    "created": "2026-06-20",
-   "pushed": "2026-11-15",
+   "pushed": "2026-11-16",
    "branch": "main",
    "licence": null,
    "releases": [],
@@ -396,10 +402,10 @@
    ],
    [
     "2026-11-16",
-    0
+    2
    ]
   ]
  },
- "captured": "2026-11-16",
- "seed": "5826c6"
+ "captured": "2026-11-17",
+ "seed": "5f1c84"
 }

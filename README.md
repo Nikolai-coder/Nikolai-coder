@@ -59,7 +59,7 @@ Audio tools that measure instead of guessing, a working method for AI agents, an
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="assets/rail.day.svg">
 <source media="(max-width: 600px)" srcset="assets/line.diavlo-mind.night.tall.svg">
-<img src="assets/line.diavlo-mind.night.wide.svg" width="100%" alt="Line 02: DIAVLO MIND. A working method for AI agents, with a benchmark. Status: shipping; latest release 1.1.0 on 2026-11-11; 6 installer downloads; 0 stars.">
+<img src="assets/line.diavlo-mind.night.wide.svg" width="100%" alt="Line 02: DIAVLO MIND. A working method for AI agents, with a benchmark. Status: shipping; latest release v1.2.0 on 2026-11-16; 15 installer downloads; 1 stars.">
 </picture>
 </a>
 </p>
@@ -114,11 +114,11 @@ Audio tools that measure instead of guessing, a working method for AI agents, an
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="assets/rail.day.svg">
 <source media="(max-width: 600px)" srcset="assets/control.night.tall.svg">
-<img src="assets/control.night.wide.svg" width="100%" alt="Telemetry, read on 2026-11-16: 26 releases shipped, 740 installer downloads, 8 stars, 4 public lines, 41 contributions in 26 weeks.">
+<img src="assets/control.night.wide.svg" width="100%" alt="Telemetry, read on 2026-11-17: 27 releases shipped, 749 installer downloads, 9 stars, 4 public lines, 43 contributions in 26 weeks.">
 </picture>
 </p>
 
-<p align="center"><sub>Read from the GitHub API on 2026-11-16. A release's download figure is the counter of its largest file, the installer. The signal is GitHub's contribution calendar, summed per week.</sub></p>
+<p align="center"><sub>Read from the GitHub API on 2026-11-17. A release's download figure is the counter of its largest file, the installer. The signal is GitHub's contribution calendar, summed per week.</sub></p>
 <!-- /factory:control -->
 
 <!-- factory:routing -->
@@ -166,7 +166,7 @@ Audio tools that measure instead of guessing, a working method for AI agents, an
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="assets/rail.day.svg">
 <source media="(max-width: 600px)" srcset="assets/exit.night.tall.svg">
-<img src="assets/exit.night.wide.svg" width="100%" alt="Manufactured, not templated. Every plate on this page is drawn by code in this repository. Build 2026-11-16, seed 5826c6.">
+<img src="assets/exit.night.wide.svg" width="100%" alt="Manufactured, not templated. Every plate on this page is drawn by code in this repository. Build 2026-11-17, seed 5f1c84.">
 </picture>
 </a>
 </p>
